@@ -35,6 +35,7 @@ print(parts)
 multi_rem = []
 for i in range(len(parts)): 
     print(f"x = a_0 + {parts[i]}a_1")
+    print(f"Raising the equation to x above and reducing using Fermat's little theorem")
     r = phi/parts[i] 
     print(f"{alpha}^{r}*a_0 = {beta}^{r} mod {modulo}")
     for j in range(2,modulo):
