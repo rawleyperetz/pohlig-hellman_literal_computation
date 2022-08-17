@@ -22,7 +22,7 @@ modulo = int(input('Enter the modulo: '))
 phi = int(input('Enter the phi val: '))
 
 for i in range(2,21):
-    if (phi)%i == 0 and Gcd(i,int(phi/i))==1:
+    if (phi)%i == 0 and Gcd(i+int(phi/i),phi)==1:
         first_phi = i
         second_phi = int(phi/first_phi)
         break 
